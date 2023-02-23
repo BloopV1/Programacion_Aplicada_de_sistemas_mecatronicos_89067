@@ -1,1 +1,77 @@
+Tarea Numero 1:
 
+####################################################################################
+####################### Primer Ejercicio ###########################################
+####################################################################################
+Par_o_impár = int(input("hola Usuario que Numero quieres colocar "))
+if Par_o_impár % 2 == 0:
+    print("bueno tu nuevo numero sera Par")
+else:
+    print("bueno tu nuevo numero sera Impar")
+####################################################################################
+####################### Segundo Ejercicio###########################################
+####################################################################################
+
+Nota_numero_1 = float(input("Que nota saco el Estudiante "))
+Nota_numero_2 = float(input("Que nota saco el Estudiante "))
+Nota_numero_3 = float(input("Que nota saco el Estudiante "))
+
+Promedio = (Nota_numero_1+Nota_numero_2+Nota_numero_3)/3
+
+while(Promedio>=3):
+    print("su promedio es: ",Promedio,"Pasaste polas o que?")
+else:
+    print("su promedio es: ",Promedio,"no todo bien ya el siguente semestre pasamos")
+
+####################################################################################
+####################### Tercer Ejercicio ###########################################
+####################################################################################
+
+import math as astr
+
+def Volumen_de_la_esfera(Radio_de_la_esfera):
+    Volumen=(4/3)*astr.pi*Radio_de_la_esfera**3
+    return Volumen
+    
+########################################################################################################################################################################   
+########################################################################################################################################################################    
+################################################################################################################################################################################################################################################################################################################################################   
+########################################################################################################################################################################    
+################################################################################################################################################################################################################################################################################################################################################   
+########################################################################################################################################################################    
+########################################################################################################################################################################
+                                                     Taller Numero 1
+                                                     
+                                                     
+    
+ Primer Ejercicio:
+ 
+n = input("Introduce el valor dividendo al numro entero: ")
+N = input("Introduce el valor divisor entero: ")
+print(n + " entre " +  N + " da un cociente " + str(int(n) // int(N)) + " y un resto " + str(int(n) % int(N)))
+ 
+ Segundo Ejercicio:
+
+import math 
+from tabulate import tabulate 
+
+Peso= float(input("Cuanto pesas?:"))
+Altura= float(input("Cual es su altura:"))
+IMC = round(Peso/math.pow(Altura,2),1)
+print("Su IMC es de "+str(IMC))
+
+list = [["Forma del cuerpo ","Indice de masa en el cuerpo)"],["Indice del peso menor al comun","Menos de 18.5"],["Indice de peso comun","18.5 – 24.9"],["Indice de Masa corporal superior al comun","25.0 – 29.9"],["La superioridad de peso a lo habitual representa una tasa de obesidad","superior al 30.0"]]
+print (tabulate(list))
+  
+  Tercer Ejercicio:
+  
+ def Valor_Del_IVA():
+    precio = float(input("Ingresa el valor del Producto con IVA:"))
+    IVA = precio*0.19
+    print("El Valor del  IVA del producto es:",IVA)
+    precio_total = precio + IVA 
+    print("El Valor del producto con IVA es del:",precio_total)
+Valor_Del_IVA()
+
+ Cuarto Ejercicio:
+ 
