@@ -1,0 +1,201 @@
+ Clase Numero 1:
+
+Lenguajes de Programacion:
+
+Un lenguaje de programación es un lenguaje formal o artificial, es decir:
+un lenguaje con reglas gramaticales bien definidas que permiten a un humano 
+en este caso, un programador escribir o programar una secuencia de instrucciones
+o comandos en forma de algoritmo ,el comportamiento físico o lógico de un sistema informático.
+
+Python
+Java
+C
+C++
+JavaScript
+
+Lenguaje a Utilizar:
+
+   Python
+
+Python es uno de los lenguajes de programación más usados actualmente y su uso sigue creciendo. 
+Posee unas características muy potentes: es de código abierto, tiene una sintaxis sencilla 
+y es fácil de entender, por lo que ahorra tiempo y recursos,es un lenguaje versátil que puede 
+tener múltiples aplicaciones. Una de ellas, es la Inteligencia Artificial, gracias a bibliotecas.
+como Keras o TensorFlow.
+
+Lenguajes compilados e interpretados:
+
+Un Compilador es un programa que traduce determimnados lenguaje a otros
+un interprete ejecuta a las instrucciones del codigo fuente directamente.
+
+Tipos de Paradigmas:
+es un conjunto de normas que definen una elaboracion 
+de un programa,tal como la estructura modular a la cohesion.
+
+            Paradigma Impertativo
+            Paradigma declarativo
+            Paradigma Orientado a objetos 
+            Paradigma reactivo
+
+
+########################################################################################################################
+ Clase Numero 2:
+
+¿Que e una Variable?
+
+Todas las variabes tienen un identificador,un tipo y un valor 
+
+x = identificador
+int = Tipos
+5 = Valor 
+
+string = "321" # caracter(string)
+integer = 321 #Un numero entero
+Float = 321.0 # Un numero Decimal 
+Boolean= true or false # Un numero Binario  
+
+Operadores Aritmeticos
+
+Un Operador aritmético toma dos operandos como entrada y son utilizados para realizar procesos de calculo que dan un resultado.
+
+a + b Suma 
+a - b Resta Diferencia entre a y b
+a * b Multiplicacion de a y b 
+a / b Division de un numero real = es el resultado dividido de b
+a // b Division con redondeo = es el resultadoa dividido de b que redondea el numero entero
+a % b modulo = es un residuo de la division entre a y b 
+a ** b = a la potencia de b
+- a Negacion = negativo de a 
+
+librerías
+
+Son un conjunto de funcionalidades que permiten al usuario llevar a cabo nuevas tareas que antes no se podían realizar.
+Por ejemplo en este caso se usará la librería match para obtener la raíz cuadrada.
+
+Ejemplo:
+
+dir(math)          # lista de funciones 
+help(math)         #Ayuda sobre la libreria 
+
+help(math.sqrt)    #Ayuda sobre la funcion sqrt 
+
+
+Usar Alias
+
+Sirven para renombrar ciertas librerías con un nombre que el propio programador desee:
+
+La libreria math adquiere el nombre match:
+
+#Ejempolo 1
+import math as m 
+print(m.sqrt(25))
+
+la funcion sqrt de la libreria math adquiere el nombre de raizc:
+
+#Ejemplo 2
+from math import as sqrt as raizc 
+print (raizc(25))
+
+
+########################################################################################################################
+Clase Numero 3:
+
+-CONDICIONALES
+
+en la siguiente sección se revisaran los condicionales así como la sintaxis de estos.
+
+## Condicionales if
+una operación if permite evaluar condiciones booleanas, de manera que se ejecuta una sección del código solo si se cumplen las condiciones
+
+var_0 = 10
+var_1 = 10
+var_2 = 5
+str_0 = 'pepito'
+str_1 = 'pepita'
+str_2 = 'Pepito'
+
+if var_0 == var_1:
+    print('las variables son iguales') # Se tiene la función else donde se ejecuta el código si no se cumplen las condiciones anteriores
+if var_0 == var_2:
+    print('las variables son iguales')
+else:
+    print('las variables son distintas') # Se tiene la función elif en este caso se tiene una segunda que solo se valida si los valores anteriores son False
+if str_0 == str_2:
+    print('las variables son iguales')
+elif str_0 == str_1:
+    print('las variables son iguales')
+else:
+    print('las variables no son iguales')
+
+'''
+en este caso las condiciones se evaluan de manera secuencial por lo tanto es posible que una condición nunca 
+sea evaluada como se muestra en el siguiente ejemplo
+
+
+¿qué condición no es evaluada?
+s_no = 10
+if s_no > 10:
+    print('Condión 1')
+elif s_no > 0:
+    print('Condición 2')
+elif s_no > 4:
+    print('condición 3')
+else:
+    print ('condición 4')
+
+
+-Ciclos 
+
+
+for:
+Un ciclo for permite dar recorridos definidos, es decir se conoce el punto de inicio y de parada, se parte de indices para definir el ciclo
+no de condiciones booleanes,para definir in ciclo for
+
+
+for variable in range N: #donde N es el valor maximo que se va a tomaR
+for elemnt in list: # donde elemt es cada uno de los elementos en la lista list
+list_0 = [0,1,2,3,4,12,6,7,8,9]
+for inx in range(10):
+    print (inx)
+
+for num in list_0:
+    print(num)
+
+Ciclos while
+
+en un ciclo while se parte de condiciones booleanas para terminar el ciclo o bien utilizando un break
+en este caso de define como 
+
+while condición: # donde la condición es un valor booleano 
+while True: # Se define un ciclo infinito y en algún punto de la función se agrega un break para detener la función 
+    break
+
+s_cont = 0
+while True:
+    print(s_cont)
+    s_cont += 1
+    if s_cont == 10:
+        break
+
+while s_cont < 10:
+    print(s_cont)
+    s_cont += 1
+
+TRY EXCEPT
+
+En algunos casos pueden ocurrir errores, que terminan de manera abrupta un código, por ese motivo puede ser útil 
+manejar los distintos errores que se pueden presentar, para esto se utiliza la estructura try except 
+
+while True:
+    str_No = input('ingrese un número entero: ')
+    try :
+        s_No = int(str_No) # esta funcion arroja un error si el valor no se puede convertir a un entero
+    except:
+        print('el valor ingresado no es un número entero, ingrese otro número')
+        continue
+    s_mod = s_No%2
+    if s_mod == 0:
+        print('es un númeor par')
+    else:
+        print('es un número impar')
+

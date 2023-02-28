@@ -1,4 +1,4 @@
-Tarea Numero 1:
+#Tarea_Numero_1:
 
 ####################################################################################
 ####################### Primer Ejercicio ###########################################
@@ -40,48 +40,3 @@ def Volumen_de_la_esfera(Radio_de_la_esfera):
 ################################################################################################################################################################################################################################################################################################################################################   
 ########################################################################################################################################################################    
 ########################################################################################################################################################################
-                                                     Taller Numero 1
-https://docs.google.com/document/d/1foLMxyeoSX7RZE5VOpp2Z9ay9JiAEPI74EGeyAE11G0/edit?usp=sharing                                                     
-   
- Primer Ejercicio:
-1. Realice un programa donde se soliciten dos números al usuario, después se de como resultado el residuo y el cociente de la división entre <n1> y <n2>. 
- 
-n = input("Introduce el valor dividendo al numro entero: ")
-N = input("Introduce el valor divisor entero: ")
-print(n + " entre " +  N + " da un cociente " + str(int(n) // int(N)) + " y un resto " + str(int(n) % int(N)))
- 
- Segundo Ejercicio:
-2. Realice un programa que calcule el índice de masa corporal de una persona, donde le solicite al usuario la estatura en cm y el peso en Kg. Después imprima como resultado el índice de masa corporal mediante un mensaje que diga “Su IMC es <valor>” redondeado con dos decimales.
-
-import math 
-from tabulate import tabulate 
-
-Peso= float(input("Cuanto pesas?:"))
-Altura= float(input("Cual es su altura:"))
-IMC = round(Peso/math.pow(Altura,2),1)
-print("Su IMC es de "+str(IMC))
-
-list = [["Forma del cuerpo ","Indice de masa en el cuerpo)"],["Indice del peso menor al comun","Menos de 18.5"],["Indice de peso comun","18.5 – 24.9"],["Indice de Masa corporal superior al comun","25.0 – 29.9"],["La superioridad de peso a lo habitual representa una tasa de obesidad","superior al 30.0"]]
-print (tabulate(list))
-  
-  Tercer Ejercicio:
-3.Realice un programa donde se solicite al usuario escribir el precio final de un artículo o producto, con el que después calculará e imprimirá en pantalla el valor del IVA y el valor bruto (precio antes de IVA) del artículo o producto. 
-  
- def Valor_Del_IVA():
-    precio = float(input("Ingresa el valor del Producto con IVA:"))
-    IVA = precio*0.19
-    print("El Valor del  IVA del producto es:",IVA)
-    precio_total = precio + IVA 
-    print("El Valor del producto con IVA es del:",precio_total)
-Valor_Del_IVA()
-
- Cuarto Ejercicio:
-4.Realice un programa que permita calcular el costo anual del consumo de combustible de un vehículo, si el usuario ingresa la distancia recorrida (Km) anual, el consumo de combustible (L / 100Km) anual y el costo promedio anual del combustible por litros recorridos ($ / L) 
-
-Distancia=int(input('Cual fue la distancia recorrida? (km):'))
-Consumo=int(input('de cuanto fue el consumo de Combustible?  (L/100KM)anual :'))
-Costo_Anual=int(input('Cual fue el valor promedio del Combustible?  ($/L) :'))
-A=Distancia/Consumo
-B=A*Costo_Anual
-print('El costo promedio anual del combustible por litros recorridos es de : ',A)
-print('El Costo anual del consumo de combustible: ',B)
