@@ -1,5 +1,3 @@
-
-
 n = int(input("Escriba un número: "))
 def Fibonacci(n):
     if n < 2:
