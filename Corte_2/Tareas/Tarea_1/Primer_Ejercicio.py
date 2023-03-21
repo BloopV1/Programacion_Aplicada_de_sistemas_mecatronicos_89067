@@ -2,7 +2,6 @@
 # Al final se deben imprimir 10 números retornados de la función Aleatorio(), alternando el orden par, impar (Comenzando con número par).
 from random import randint
 
-
 def Aleatorio(n=10):
     num = []
     while len(num) < n:
