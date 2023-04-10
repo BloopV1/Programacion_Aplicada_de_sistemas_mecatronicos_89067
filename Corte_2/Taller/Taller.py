@@ -2,7 +2,7 @@
 # leer txt y crear diccionario
 archivo = open("Alimentos.txt","r")
 contenido = archivo.read
-
+archivo.close()
 
 Al_dic = {}  
 with open("Alimentos.txt", "r") as file:
@@ -24,6 +24,7 @@ while True:
     valor_base = valor_neto + valor_iva 
 
     #imprimir el valor base y el valor del IVA 
+    print(contenido)
     print(f"El valor base del producto es: {valor_base:.2f}")
     print(f"El valor del IVA es: {valor_iva:.2f}")
 archivo.close()
