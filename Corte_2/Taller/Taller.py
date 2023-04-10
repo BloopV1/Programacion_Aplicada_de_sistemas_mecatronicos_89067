@@ -1,5 +1,6 @@
 # Realice un programa para calcular el valor bruto de un producto alimenticio según la última reforma tributaria del IVA de la canasta familiar del año 2023.
 # leer txt y crear diccionario
+
 archivo = open("Alimentos.txt","r")
 contenido = archivo.read
 
