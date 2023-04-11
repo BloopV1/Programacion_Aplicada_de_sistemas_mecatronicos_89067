@@ -1,1 +1,58 @@
+class persona:
+    def __int__(self):
+        self.nombre = None
+        self.altura = None
+        self.peso = None
+
+# GETTERS = obtener valores 
+
+def getNombre(self):
+    return self.nombre
+
+def getAltura(self):
+    return self.altura
+
+def getPeso(self):
+    return self.peso
+
+#SETTERS = modificar valores 
+def setNombre(self,nombre:str):
+    self.nombre = nombre
+
+def setAltura(self,altura:int):
+    self.altura = altura
+
+def selfPeso(self,peso:float):
+    self.peso = peso
+
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+def main():
+    
+    estudiante = persona()
+    estudiante.setNombre= "roberto "
+    estudiante.setAltura = (170)
+    estudiante.setPeso = (65)
+
+
+    profesor = persona()
+    profesor.setNombre = "david "
+    profesor.setAltura = (180)
+    profesor.setPeso = (72.44)
+
+
+    imc = calcular_imc(persona.peso, persona.altura) 
+    if imc < 18.5:
+        print("Bajo peso")
+    elif imc < 25:
+        print("Peso normal")
+    elif imc < 30:
+        print("Sobrepeso")
+    else:
+        print("Obesidad")
+        
+print(f"Usted{persona.__getattribute__()}se resultado es :{calcular_imc}")
+   
+
 
