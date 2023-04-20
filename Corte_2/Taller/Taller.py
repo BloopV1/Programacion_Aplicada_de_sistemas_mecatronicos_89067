@@ -2,8 +2,7 @@
 # leer txt y crear diccionario
 
 archivo = open("Alimentos.txt","r")
-contenido = archivo.read
-
+contenido = archivo.read()
 
 Al_dic = {}  
 with open("Alimentos.txt", "r") as file:

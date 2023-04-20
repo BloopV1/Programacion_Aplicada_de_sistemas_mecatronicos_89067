@@ -28,4 +28,4 @@ for persona in personas: #calcular el IMC de cada persona
     else:
         print("Obesidad")
 
-print(f"{persona['nombre']}: IMC = {imc:.2f}")
+    print(f"{persona['nombre']}: IMC = {imc:.2f}")
