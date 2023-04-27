@@ -46,8 +46,8 @@ def calcular_distancia_total():
     # Obtener los valores de entrada
     altura_botella = float(txt_altura_botella.get())
     diametro_botella = float(txt_diametro_botella.get())
-    litros = int(txt_litros.get())
-    mililitros = int(txt_mililitros.get())
+    litros = float(txt_litros.get())
+    mililitros = float(txt_mililitros.get())
 
     # Calcular la distancia total
     volumen_botella = litros + (mililitros / 1000)
